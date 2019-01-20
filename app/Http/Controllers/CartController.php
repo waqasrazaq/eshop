@@ -41,4 +41,18 @@ class CartController extends Controller
 
         return response()->json($cart_item, 201);
     }
+
+    /**
+     * Returns all the items added into the cart
+     * @param $cart_id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function showCartItems($cart_id)
+    {
+        try {
+            return response()->json(CartItems::where('cart_id', '=', $cart_id)->get(), 200);
+        } catch (Exception $e) {
+            return response()->json("Internal server error", 500);
+        }
+    }
 }
