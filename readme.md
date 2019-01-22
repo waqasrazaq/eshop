@@ -71,7 +71,7 @@ That's it. Our asset-manager is installed and configured. Double check that dev 
 # Output API end points
 
 ## For userstory1: "as a customer, I want to add an item into the basket"
-URL: http://host:post/api/carts/{cart_id}/items
+URL: http://hostname:port/api/carts/{cart_id}/items
 
 Example: http://127.0.0.1:8000/api/carts/2/items
 
@@ -86,10 +86,10 @@ Required Payload example: {
 
 ### Response
 
-HTTP Status Code 201 with json object of added items if are items added sussfully and status code 422 in case of invalid input to the API
+HTTP status code 201 with json object of added items if items are added sussfully and status code 422 in case of invalid input to the API
 
 ## For userstory2: "as a customer, I want to view all my item in my basket"
-URL: http://host:post/api/carts/{cart_id}/items
+URL: http://hostname:port/api/carts/{cart_id}/items
 
 Example URL: http://127.0.0.1:8000/api/carts/2/items
 
