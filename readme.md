@@ -101,12 +101,12 @@ For valid response, HTTP status code 200 with list of all the added items into t
 
 ## Major files used for to create these API
 Although the information below on the application structure is very brief, at least it gives a starting point for the developers to work on the project 
-* routes/api.php - Contains the api routes
+* routes/api.php - Contains the RESTful api routes
 * app/Http/Controllers - Contains all the controllers for the application. There's a file CartController.php inside it which controls all the requests coming from end points 
-* app/Carts.php,app/CartItems.php, app/Products.php and app/User.php files are models we created for the cart API
-* database/migrations - Contains the tables schema and migration related code 
+* app/Carts.php, app/CartItems.php, app/Products.php and app/User.php files are models I've created for the cart API
+* database/migrations - Contains the tables **schema** and migration related code 
 * database/seeds - Contains code to populate dummy data in the tables
 * vendor - Contains all the composer dependencies
-* tests -  Contains the unit tests for these API
+* tests -  Contains the unit tests for these API. (tests/Feature/CartsTest.php)
 
-For more details on the files structure, follow this docs https://laravel.com/docs/ link.
+For more details on the overall files structure of the laravel project, follow this docs https://laravel.com/docs/ link.
