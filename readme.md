@@ -98,3 +98,15 @@ HTTP Method: Get
 
 ### Response
 For valid response, HTTP status code 200 with list of all the added items into the cart (json format) and status code 500 in case any error on the server.
+
+## Major files used for to create these API
+Although the information below on the application structure is very brief, at least it gives a starting point for the developers to work on the project 
+* routes/api.php - Contains the api routes
+* app/Http/Controllers - Contains all the controllers for the application. There's a file CartController.php inside it which controls all the requests coming from end points 
+* app/Carts.php,app/CartItems.php, app/Products.php and app/User.php files are models we created for the cart API
+* database/migrations - Contains the tables schema and migration related code 
+* database/seeds - Contains code to populate dummy data in the tables
+* vendor - Contains all the composer dependencies
+* tests -  Contains the unit tests for these API
+
+For more details on the files structure, follow this docs https://laravel.com/docs/ link.
