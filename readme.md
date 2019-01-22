@@ -1,5 +1,5 @@
 # Problem description
-write a RESTful API, available via HTTP
+Write a RESTful API, available via HTTP
 use case: shopping basket
 * userstory1: "as a customer, I want to add an item into the basket"
 * userstory2: "as a customer, I want to view all my item in my basket"
