@@ -32,7 +32,14 @@ git clone https://github.com/waqasrazaq/eshop.git
 
 It will take some time, so wait for a couple of minutes to complete the process.
 
-- In the root of the project directory, execute the below command to generate the App key
+
+- In the root of the project directory, execute the below command via terminal. It will create the .env file from the example file comes with Laraval 
+
+```
+cp .env.example .env
+```
+
+- Then execute the below command to generate the App key
 
 ```
 php artisan key:generate
