@@ -1,13 +1,10 @@
-
-Shopping cart with RESTful API
-
 # Problem description
 write a RESTful API, available via HTTP
 use case: shopping basket
 * userstory1: "as a customer, I want to add an item into the basket"
 * userstory2: "as a customer, I want to view all my item in my basket"
 
-## Technologies Used
+## Technologies used
 * PHP 7
 * Laravel Framework 5.7
 * Composer as package manager
@@ -71,23 +68,29 @@ php artisan migrate
 
 That's it. Our asset-manager is installed and configured. Double check that dev web server is started and then type the URL in browser as http://base_web_server_url:port/asset-manager/public
 
-# Output API End points
+# Output API end points
 
 ## For userstory1: "as a customer, I want to add an item into the basket"
-### Request
 URL: http://127.0.0.1:8000/api/carts/cart_id/items
+
+### Request
+
 HTTP Method: Post
+
 Required Payload: { 
     cart_id: n
     product_id: n
     quantity: n
 }
+
 ### Response
+
 HTTP Status Code 201 with json object of added items if are items added sussfully and status code 422 in case of invalid input to the API
 
 ## For userstory2: "as a customer, I want to view all my item in my basket"
-### Request
 URL: http://127.0.0.1:8000/api/carts/{cart_id}/items
+
+### Request
 HTTP Method: Get
 
 ### Response
