@@ -104,7 +104,8 @@ Although the information below on the application structure is very brief, at le
 * routes/api.php - Contains the RESTful api routes
 * app/Http/Controllers - Contains all the controllers for the application. There's a file CartController.php inside it which controls all the requests coming from end points 
 * app/Carts.php, app/CartItems.php, app/Products.php and app/User.php files are models I've created for the cart API
-* database/migrations - Contains the tables **schema** and migration related code 
+* database/migrations - Contains the tables **schema** and migration related code
+![DB schema](http://projectxdubai.com/eshop/db-schema.png)
 * database/seeds - Contains code to populate dummy data in the tables
 * vendor - Contains all the composer dependencies
 * tests -  Contains the unit tests for these API. (tests/Feature/CartsTest.php)
